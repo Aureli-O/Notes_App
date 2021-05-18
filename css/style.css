@@ -49,9 +49,10 @@ body {
 }
 .note textarea{
     outline: none;
+    resize: none;
     font: 1rem monospace;
     border: none;
-    height: 400px;
+    height: 360px;
     width: 100%;
 }
 .note .hidden {
