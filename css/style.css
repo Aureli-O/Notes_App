@@ -5,7 +5,7 @@ body {
     background-color: #eeee;
     display: flex;
     flex-wrap: wrap;
-    font-family: monospace;
+    font:1rem sans-serif;
     margin: 0;
     padding-top: 3rem;
 }
@@ -50,7 +50,7 @@ body {
 .note textarea{
     outline: none;
     resize: none;
-    font: 1rem monospace;
+    font: 1rem sans-serif;
     border: none;
     height: 360px;
     width: 100%;
