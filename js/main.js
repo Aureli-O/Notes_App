@@ -1,4 +1,4 @@
-const addBtn = document.querySelector("#addBtn")
+const addBtn = document.querySelector("#addBtn");
 
 const notes = JSON.parse(localStorage.getItem("notes"));
 
@@ -34,7 +34,7 @@ function addNewNote(text = "") {
   const textArea = note.querySelector("textarea");
 
   textArea.value = text;
-  main.innerHTML = marked(text);
+  main.innerHTML = text;
 
   editBtn.addEventListener("click", () => {
     main.classList.toggle("hidden");
@@ -50,7 +50,7 @@ function addNewNote(text = "") {
   textArea.addEventListener("input", (e) => {
     const { value } = e.target;
 
-    main.innerHTML = marked(value);
+    main.innerHTML = value;
 
     updateLS();
   });
